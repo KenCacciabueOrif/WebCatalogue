@@ -1,0 +1,21 @@
+:root {
+    --base-size: 10vmin;
+}
+
+.square {
+  width: var(--base-size);
+  height: var(--base-size);
+  background-color: #ff0055ff;
+  position: absolute;
+  left: 45vw;
+  top: 10vh;
+}
+
+.rectangle {
+  width: calc(var(--base-size) * 2);
+  height: var(--base-size);
+  background-color: #00ffaaff;
+  position: absolute;
+  left: 40vw;
+  top: 20vh;
+}
