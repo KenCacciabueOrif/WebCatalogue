@@ -1,0 +1,20 @@
+:root {
+  --base-size: 10vmax;
+  --top-margin: 85px;
+  --base-top: 15vmax;
+}
+
+h1 {
+  position: absolute;
+  z-index: 1;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.square {
+  width: var(--base-size);
+  height: var(--base-size);
+  background-color: #ff0055ff;
+  position: absolute;
+  left: calc(50vw - var(--base-size) / 2);
+  top: var(--top-margin);
+}
