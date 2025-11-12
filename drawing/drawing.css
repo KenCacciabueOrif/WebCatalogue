@@ -1,5 +1,13 @@
 :root {
-    --base-size: 10vmin;
+  --base-size: 10vmax;
+  --top-margin: 85px;
+  --base-top: 15vmax;
+}
+
+h1 {
+  position: absolute;
+  z-index: 1;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .square {
@@ -7,15 +15,144 @@
   height: var(--base-size);
   background-color: #ff0055ff;
   position: absolute;
-  left: 45vw;
-  top: 10vh;
+  left: calc(50vw - var(--base-size) / 2);
+  top: var(--top-margin);
 }
 
 .rectangle {
-  width: calc(var(--base-size) * 2);
+  --local-size-width: calc(var(--base-size) * 2);
+  width: var(--local-size-width);
   height: var(--base-size);
   background-color: #00ffaaff;
   position: absolute;
-  left: 40vw;
-  top: 20vh;
+  left: calc(50vw - var(--local-size-width) / 2);
+  top: calc(var(--base-top) + var(--top-margin));
+}
+
+.circle {
+  width: var(--base-size);
+  height: var(--base-size);
+  background-color: #a200ffff;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50vw - var(--base-size) / 2);
+  top: calc((var(--base-top) * 2) + var(--top-margin));
+}
+
+.oval {
+  --local-size-width: calc(var(--base-size) * 2);
+  width: var(--local-size-width);
+  height: var(--base-size);
+  background-color: #00f7ffff;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50vw - var(--local-size-width) / 2);
+  top: calc((var(--base-top) * 3) + var(--top-margin));
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: calc(var(--base-size) / 4) solid transparent;
+  border-right: calc(var(--base-size) / 4) solid transparent;
+  border-bottom: calc(var(--base-size) / 2) solid #ff5e00ff;
+  position: absolute;
+  left: calc((50vw - var(--base-size) / 4) - (30vmin));
+  top: calc((var(--base-top) * 4) + var(--top-margin));
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: calc(var(--base-size) / 4) solid transparent;
+  border-right: calc(var(--base-size) / 4) solid transparent;
+  border-top: calc(var(--base-size) / 2) solid #00ff2aff;
+  position: absolute;
+  left: calc((50vw - var(--base-size) / 4) - 10vmin);
+  top: calc((var(--base-top) * 4) + var(--top-margin));
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: calc(var(--base-size) / 4) solid transparent;
+  border-bottom: calc(var(--base-size) / 4) solid transparent;
+  border-left: calc(var(--base-size) / 2) solid #ff0000ff;
+  position: absolute;
+  left: calc((50vw - var(--base-size) / 4) + 10vmin);
+  top: calc((var(--base-top) * 4) + var(--top-margin));
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: calc(var(--base-size) / 4) solid transparent;
+  border-bottom: calc(var(--base-size) / 4) solid transparent;
+  border-right: calc(var(--base-size) / 2) solid #0004ffff;
+  position: absolute;
+  left: calc((50vw - var(--base-size) / 4) + 30vmin);
+  top: calc((var(--base-top) * 4) + var(--top-margin));
+}
+
+.triangle-top-right {
+  width: 0;
+  height: 0;
+  border-top: calc(var(--base-size) / 2) solid #0004ffff;
+  border-left: calc(var(--base-size) / 2) solid transparent;
+  position: absolute;
+  left: calc((50vw - var(--base-size) / 4) - (30vmin));
+  top: calc((var(--base-top) * 5) + var(--top-margin));
+}
+
+.triangle-top-left {
+  width: 0;
+  height: 0;
+  border-top: calc(var(--base-size) / 2) solid #ff0000ff;
+  border-right: calc(var(--base-size) / 2) solid transparent;
+  position: absolute;
+  left: calc((50vw - var(--base-size) / 4) - 10vmin);
+  top: calc((var(--base-top) * 5) + var(--top-margin));
+}
+
+.triangle-bottom-right {
+  width: 0;
+  height: 0;
+  border-bottom: calc(var(--base-size) / 2) solid #00ff2aff;
+  border-left: calc(var(--base-size) / 2) solid transparent;
+  position: absolute;
+  left: calc((50vw - var(--base-size) / 4) + 10vmin);
+  top: calc((var(--base-top) * 5) + var(--top-margin));
+}
+
+.triangle-bottom-left {
+  width: 0;
+  height: 0;
+  border-bottom: calc(var(--base-size) / 2) solid #ff5e00ff;
+  border-right: calc(var(--base-size) / 2) solid transparent;
+  position: absolute;
+  left: calc((50vw - var(--base-size) / 4) + 30vmin);
+  top: calc((var(--base-top) * 5) + var(--top-margin));
+}
+
+.curved-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: calc(var(--base-size)) solid transparent;
+  border-right: calc(var(--base-size)) solid #ff0055ff;
+  left: calc(50vw - var(--base-size) / 2);
+  top: calc((var(--base-top) * 6) + var(--top-margin));
+  transform: rotate(10deg);
+}
+
+.curved-arrow:after {
+  content: "";
+  position: absolute;
+  border-top: calc(var(--base-size) / 3) solid #ff0055ff;
+  border-radius: calc(var(--base-size)) 0 0 0;
+  top: -12vmax;
+  left: -9vmax;
+  width: 12vmax;
+  height: 12vmax;
+  transform: rotate(45deg);
 }
