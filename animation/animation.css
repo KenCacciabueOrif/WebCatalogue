@@ -10,11 +10,97 @@ h1 {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-.square {
+.square-colour-animation {
+  border-radius: 10%;
   width: var(--base-size);
   height: var(--base-size);
   background-color: #ff0055ff;
   position: absolute;
   left: calc(50vw - var(--base-size) / 2);
   top: var(--top-margin);
+  animation: colour-animation 3s infinite alternate;
+}
+
+@keyframes colour-animation {
+  from {
+    background-color: #ff0055ff;
+  }
+  to {
+    background-color: #00ffaaff;
+  }
+}
+
+.square-position-animation {
+  border-radius: 10%;
+  width: var(--base-size);
+  height: var(--base-size);
+  background-color: #ff0055ff;
+  position: absolute;
+  left: calc(50vw - var(--base-size) / 2);
+  top: calc(var(--top-margin) + var(--top-margin));
+  animation: position-animation 1s infinite alternate;
+}
+
+.square-position-animation-linear {
+  border-radius: 10%;
+  width: var(--base-size);
+  height: var(--base-size);
+  background-color: #ff00c8ff;
+  position: absolute;
+  left: calc(50vw - var(--base-size) / 2);
+  top: calc(var(--top-margin) + (var(--top-margin) * 2));
+  animation: position-animation 1s infinite alternate linear;
+}
+
+.square-position-animation-ease {
+  border-radius: 10%;
+  width: var(--base-size);
+  height: var(--base-size);
+  background-color: #c300ffff;
+  position: absolute;
+  left: calc(50vw - var(--base-size) / 2);
+  top: calc(var(--top-margin) + (var(--top-margin) * 3));
+  animation: position-animation 1s infinite alternate ease;
+}
+.square-position-animation-ease-in {
+  border-radius: 10%;
+  width: var(--base-size);
+  height: var(--base-size);
+  background-color: #8c00ffff;
+  position: absolute;
+  left: calc(50vw - var(--base-size) / 2);
+  top: calc(var(--top-margin) + (var(--top-margin) * 4));
+  animation: position-animation 1s infinite alternate ease-in;
+}
+
+.square-position-animation-ease-out {
+  border-radius: 10%;
+  width: var(--base-size);
+  height: var(--base-size);
+  background-color: #3700ffff;
+  position: absolute;
+  left: calc(50vw - var(--base-size) / 2);
+  top: calc(var(--top-margin) + (var(--top-margin) * 5));
+  animation: position-animation 1s infinite alternate ease-out;
+}
+
+.square-position-animation-ease-in-out {
+  border-radius: 10%;
+  width: var(--base-size);
+  height: var(--base-size);
+  background-color: #003cffff;
+  position: absolute;
+  left: calc(50vw - var(--base-size) / 2);
+  top: calc(var(--top-margin) + (var(--top-margin) * 6));
+  animation: position-animation 1s infinite alternate ease-in-out;
+}
+
+@keyframes position-animation {
+  from {
+    left: calc((50vw - var(--base-size)) * 2);
+  }
+  to {
+    left: calc((50vw - var(--base-size)) / 4);
+    background-color: #ff4800ff;
+  }
 }
