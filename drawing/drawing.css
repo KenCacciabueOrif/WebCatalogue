@@ -156,3 +156,14 @@ h1 {
   height: 12vmax;
   transform: rotate(45deg);
 }
+
+.trapezoid {
+  width: var(--base-size);
+  height: 0;
+  border-bottom: calc(var(--base-size) / 2) solid #00ffaaff;
+  border-left: calc(var(--base-size) / 4) solid transparent;
+  border-right: calc(var(--base-size) / 4) solid transparent;
+  position: absolute;
+  left: calc(50vw - var(--base-size) / 1.25);
+  top: calc((var(--base-top) * 7) + var(--top-margin));
+}
