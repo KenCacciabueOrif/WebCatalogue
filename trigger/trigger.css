@@ -1,0 +1,18 @@
+:root {
+  --base-size: 10vmax;
+  --top-margin: 20vmax;
+}
+
+.hover-colour-change {
+    border-radius: 10%;
+    width: var(--base-size);
+    height: var(--base-size);
+    background-color: #ff0055ff;
+    position: absolute;
+    left: calc(50vw - var(--base-size) / 2);
+    top: var(--top-margin);
+}
+
+.hover-colour-change:hover {
+    background-color: #00ffaaff;
+}
