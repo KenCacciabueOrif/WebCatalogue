@@ -16,3 +16,13 @@
 .hover-colour-change:hover {
     background-color: #00ffaaff;
 }
+
+.on-click-hello {
+    border-radius: 10%;
+    width: var(--base-size);
+    height: var(--base-size);
+    background-color: #ff0055ff;
+    position: absolute;
+    left: calc(50vw - var(--base-size) / 2);
+    top: calc(var(--top-margin) * 2);
+}
