@@ -1,7 +1,6 @@
 :root {
   --base-size: 10vmax;
-  --top-margin: 85px;
-  --base-top: 15vmax;
+  --top-margin: 15vmax;
 }
 
 h1 {
