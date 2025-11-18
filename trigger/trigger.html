@@ -10,8 +10,10 @@
 <body>
     <h1>Trigger</h1>
     <div class="hover-colour-change"></div>
-    <div class="on-click-hello" onclick="hello()"></div>
-    <div class="on-key-press-hello" onclick="hello()"></div>
+    <div class="on-click-hello" onclick="hello(this)"></div>
+    <div class="on-key-press-hello" onkeydown="hello(this)"></div>
+    <div class="on-key-press-show-key" onkeydown="hello(this)"></div>
+    <div class="moving" id="moving"></div>
     <script src="trigger.js"></script>
 </body>
 </html>
