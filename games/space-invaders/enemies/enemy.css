@@ -1,9 +1,7 @@
 .ennemy {
-  width: var(--base-size);
-  height: var(--base-size);
+  width: 5vmin;
+  height: 5vmin;
   background-color: transparent;
-  left: calc(50vw - var(--base-size) / 2);
-  top: calc(var(--top-margin) * 3);
   display: flex;
   justify-content: center;
   align-items: center;

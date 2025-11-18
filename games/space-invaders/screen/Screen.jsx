@@ -1,12 +1,14 @@
+
 // src/Enemy.jsx
 import React from "react";
-import EnnemyRow from "../ennemie-row/EnnemyRow";
-
+import EnnemyBlock from "../ennemie-block/EnnemyBlock";
+import './screen.css'
 export default function Screen() {
-
   return (
-    <>
-    <EnnemyRow/>
-    </>
+    <div className="screen">
+      <EnnemyBlock />
+    </div>
   );
 }
+
+

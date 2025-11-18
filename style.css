@@ -1,7 +1,7 @@
 html {
-    background-color: #000000ff;
-    color: #d6d6d6ff;
-    font-size: 4vmax;
+  background-color: #000000ff;
+  color: #d6d6d6ff;
+  font-size: 4vmax;
 }
 
 :root {
@@ -9,19 +9,22 @@ html {
   --top-margin: 85px;
   --base-top: 15vmax;
 
-  
   --color-1: #ff0055ff;
   --color-2: #00ffaaff;
 }
 
 a:link {
-    color: #d30082ff;
+  color: #d30082ff;
 }
 
 a:visited {
-    color: #551a8bff;
+  color: #551a8bff;
 }
 
 a:hover {
-    color: #ff0037ff;
+  color: #ff0037ff;
+}
+
+body {
+  margin: 0;
 }
