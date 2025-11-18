@@ -1,0 +1,13 @@
+.ennemy {
+  width: var(--base-size);
+  height: var(--base-size);
+  background-color: transparent;
+  left: calc(50vw - var(--base-size) / 2);
+  top: calc(var(--top-margin) * 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;       /* remove default spacing */
+  box-sizing: border-box;
+  margin:0.1vmax;
+}

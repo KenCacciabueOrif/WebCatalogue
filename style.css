@@ -4,6 +4,16 @@ html {
     font-size: 4vmax;
 }
 
+:root {
+  --base-size: 10vmax;
+  --top-margin: 85px;
+  --base-top: 15vmax;
+
+  
+  --color-1: #ff0055ff;
+  --color-2: #00ffaaff;
+}
+
 a:link {
     color: #d30082ff;
 }
